@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Gmail_AI_Reply_Bot",
+  "version": "1.0.0",
+  "description": "Analysizing the mail and suggesting mail replies using ChatGPT",
+  "author": "Sahil Kumar",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    { "matches": ["https://mail.google.com/*"], "js": ["email-script.js"] }
+  ]
+}
