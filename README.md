@@ -1,4 +1,4 @@
-# Project Name
+# ChatGPT-Email-Bot
 
 Short description or overview of the project.
 
