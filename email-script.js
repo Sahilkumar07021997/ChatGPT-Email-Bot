@@ -9,7 +9,10 @@ window.onload = function () {
           const msgs = document.querySelector(".adn.ads").innerText;
           console.log("running from vs!");
             (async function() {
-                await chrome.runtime.sendMessage(msgs); 
+                // await chrome.runtime.sendMessage(msgs); 
+                const gptResponse = await chrome.runtime.sendMessage(msgs); // getting back the response after sending the message the email content.
+                const gmailTextbox = document.querySelector('[role=textbox]'); // finding the reply textbox
+                gmailTextbox.innerText = gptResponse; // setting the reply into the reply textbox.
           })();
         });
       });
