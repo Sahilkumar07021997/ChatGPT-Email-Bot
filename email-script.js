@@ -20,6 +20,7 @@ window.onload = function () {
   };
 };
 
+
 // try { //PROPER WAY TO HANDLE PROMISE!!
 //     const response = await new Promise((resolve, reject) => {
 //       chrome.runtime.sendMessage(msgs, (response) => {
